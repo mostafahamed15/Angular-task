@@ -1,17 +1,23 @@
-<mat-toolbar>
-    <a routerLink="/home">
+<mat-toolbar 
+fxFlexLayout = "row" 
+fxFlexLayoutGap = "20px" 
+>
+    
     <mat-icon>home</mat-icon>
+    <a routerLink="/home" fxFlex = "10">
     Home 
   </a>
-  <a routerLink="/about">
+  
       <mat-icon>perm_identity</mat-icon>
+      <a routerLink="/about" fxFlex = "10">
       About
     </a>
-    <a routerLink="/Contact us">
+   
         <mat-icon>people_outline</mat-icon>
+        <a routerLink="/Contact us" fxFlex = "10">
         Contact Us
     </a>
-  <button mat-fab class = "button-love">
+  <button mat-fab class = "button-love" fxFlexOffset="150px" >
     <mat-icon class="icon-love" aria-label="Example icon-button with a heart icon">favorite</mat-icon>
   </button>
 </mat-toolbar>
