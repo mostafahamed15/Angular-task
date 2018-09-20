@@ -5,6 +5,7 @@
 mat-toolbar{
     background-color: purple;
     margin-bottom: 20px;
+    font-size: 2vw
 }
 mat-icon{
 color: brown
