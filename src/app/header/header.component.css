@@ -1,0 +1,17 @@
+.button-love{
+    border: 1px solid blue;
+    margin-left: 50px;
+    flex: .1;
+    float: right;
+}
+.icon-love{
+    display: flex;
+    flex: 1
+}
+mat-toolbar{
+    flex: 1;
+    background-color: purple;
+}
+mat-icon{
+color: brown
+}
