@@ -1,4 +1,5 @@
 
+ <button mat-button routerLink = "/addProduct">Add Product</button>
 <div   *ngIf = "products" class="Product-content">
 <mat-card  class="example-card1"    *ngFor = "let product of products">
   <mat-card-header >
@@ -15,8 +16,8 @@
     </p>
   </mat-card-content>
   <mat-card-actions  >
-    <button mat-button routerLink = "/addProduct">LIKE</button>
-    <button mat-button>SHARE</button>
+   
+    <button mat-button (click) = "navigation(product.id)">Product Detail</button>
   </mat-card-actions>
 </mat-card>
   </div>

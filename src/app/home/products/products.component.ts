@@ -9,6 +9,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class ProductsComponent implements OnInit {
 products;
+product;
+id;
   constructor( private service: ApiServiceService,
   private route: ActivatedRoute,
 private router: Router,
@@ -18,8 +20,19 @@ private router: Router,
     this.service.getProducts().subscribe((data:any) => {
       console.log(data);
       this.products = data;
+     
+      
+    
     });
+    
+  
 
+  }
+
+  navigation(id){
+    
+    this.router.navigate(['/product-details/' + id]);
+    
   }
 
 }
